@@ -17,4 +17,4 @@ print(employee.company)#prints class attribute even if instance of object is pre
 
 # object introspection === it is a way to find out all the attribute and method used in an object
 
-print(dir(e))
+print(dir(e))   #e is the object
