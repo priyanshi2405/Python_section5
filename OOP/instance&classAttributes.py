@@ -12,4 +12,9 @@ class employee:
 e = employee("reliance","raju",350000)
 e.get_info()
 print(e.company)
-print(employee.company)#prints
+print(employee.company)#prints class attribute even if instance of object is present
+
+
+# object introspection === it is a way to find out all the attribute and method used in an object
+
+print(dir(e))
