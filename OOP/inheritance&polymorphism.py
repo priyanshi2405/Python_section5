@@ -8,12 +8,13 @@ class animal: #parent class
         print("general animal sound")
 
 class dog(animal):      #child class and passed with parent class(animal)
-    def speak(slef):
+    def speaks(self):    #this is called method over riding (making a new verson of the same method in child class)
+        super().speak()  #to call the instance or parent class's methods
         print("the dog says woof!!")
 
 # d = dog("oreo")  #it is the object for child class 
 # d.speak()
-a = animal("oreo")
-a.speak()
-print(a.location)
+a = dog("oreo")
+a.speaks()
+# print(a.location)
 
